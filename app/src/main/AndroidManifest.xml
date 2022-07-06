@@ -17,10 +17,10 @@
         android:theme="@style/Theme.FireBase"
         tools:targetApi="31">
         <service
-            android:name=".Notification"
-            android:exported="false">
+            android:name=".MyFirebaseInstanceIDService"
+            android:exported="true">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
         <activity
