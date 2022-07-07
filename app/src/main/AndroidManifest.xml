@@ -16,13 +16,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FireBase"
         tools:targetApi="31">
+        <activity
+            android:name=".Getdata"
+            android:exported="false" />
+
         <service
             android:name=".MyFirebaseInstanceIDService"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />

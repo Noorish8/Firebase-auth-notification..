@@ -39,8 +39,35 @@
         app:layout_constraintEnd_toEndOf="@+id/et_name"
         android:layout_marginTop="10dp"/>
 
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btn_sub"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:text="Submit"-->
+<!--        android:textColor="@color/white"-->
+<!--        style="@style/button"-->
+<!--        android:layout_marginHorizontal="15dp"/>-->
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_sub"
+        android:id="@+id/btn_get_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sign_up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        android:text="get"
+        android:textColor="@color/white"
+        style="@style/button"
+        android:layout_marginHorizontal="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
